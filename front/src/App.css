@@ -95,7 +95,7 @@ body {
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
-.left-sidebar {
+.left-sidebar- {
 	float: left;
 	width: 250px;
 	margin-left: -100%;
@@ -106,7 +106,7 @@ body {
 
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
-.right-sidebar {
+.right-sidebar- {
 	float: left;
 	width: 250px;
 	margin-left: -250px;
