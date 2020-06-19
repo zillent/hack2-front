@@ -1,27 +1,46 @@
-import React from 'react';
+import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import './rightbar.css';
-import Branch from "../branch";
-
-
+import RightBarBranch from "../rightbar-branch";
 
 const RightBar = (props) => {
-    let branches = [{name: 'Топ идей', link: 'Самые новые'}, {name: 'Самые новые', link: 'fds'}, {name: 'Популярное', link: 'fds'}, {name: 'Реализованные', link: 'fавыаываds'}, {name: 'Достижения', link: 'fds'}];
-      return (
-      <table className="table">
-        <tr><td className ='headerView'>
-          BCE ИДЕИ
-        </td></tr>
-        { branches.map(branch => <tr>
-      <td>
-        <Branch name={branch.name} link = {branch.link}/>
-      </td>
-    </tr>
-        )
-        }
-      </table>);
-  ;
-  };
+  let branches = [
+    {
+      name: "Все идеи",
+      items: [
+        { name: "Мои идеи" },
+        { name: "Мои комментарии" },
+        { name: "Избранное" },
+        { name: "Настройка" },
+      ],
+    },
+    {
+      name: "Тенденции",
+      items: [
+        { name: "#Реклама" },
+        { name: "#Продвижение" },
+        { name: "#Мусор" },
+        { name: "#Автоматизация процесса" },
+      ],
+    },
+    {
+      name: "Последние новости",
+      items: [
+        { name: "Оптимизация расходов на рекламу" },
+        { name: "Оптимизация рекламы" },
+      ],
+    },
+  ];
+  return (
+    <>
+      {branches.map((branch) => (
+        <RightBarBranch
+          name={branch.name}
+          items={branch.items}
+        ></RightBarBranch>
+      ))}
+    </>
+  );
+};
 
 export default RightBar;
