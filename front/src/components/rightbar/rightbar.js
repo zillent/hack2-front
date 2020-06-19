@@ -1,20 +1,27 @@
 import React from 'react';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import './rightbar.css';
+import Branch from "../branch";
+
+
 
 const RightBar = (props) => {
-    return (<>
-    <Row>
-        <Col>Все идеи</Col>
-    </Row>
-    <Row>
-        <Col>Тенденции</Col>
-    </Row>
-    <Row>
-        <Col>Последние новости</Col>
-    </Row>
-    </>
-    );
-}
+    let branches = [{name: 'Топ идей', link: 'Самые новые'}, {name: 'Самые новые', link: 'fds'}, {name: 'Популярное', link: 'fds'}, {name: 'Реализованные', link: 'fавыаываds'}, {name: 'Достижения', link: 'fds'}];
+      return (
+      <table className="table">
+        <tr><td className ='headerView'>
+          BCE ИДЕИ
+        </td></tr>
+        { branches.map(branch => <tr>
+      <td>
+        <Branch name={branch.name} link = {branch.link}/>
+      </td>
+    </tr>
+        )
+        }
+      </table>);
+  ;
+  };
 
 export default RightBar;

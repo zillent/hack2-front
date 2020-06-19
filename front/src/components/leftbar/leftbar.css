@@ -1,0 +1,25 @@
+.branch {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+   /* padding: 5px 15px;*/
+    font-weight: bold;
+    min-width: 150px;
+        padding: 5px 15px;
+        margin: 0 5px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(61, 61, 61, 0.822);
+    
+} 
+
+.headerView{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.colortext {
+    background-color: #ffe; /* Цвет фона */
+    color: #930; /* Цвет текста */
+   }
