@@ -1,6 +1,4 @@
 import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./rightbar.css";
 import RightBarBranch from "../rightbar-branch/rightbar-branch";
 
@@ -19,7 +17,7 @@ import RightBarBranch from "../rightbar-branch/rightbar-branch";
     return (
       <>
         {IdeaList.map((branch) => (
-          <table className='table'>
+          <table className='table' key={branch.name}><tbody>
             <tr>
             <td>
           <RightBarBranch className='table'
@@ -28,6 +26,7 @@ import RightBarBranch from "../rightbar-branch/rightbar-branch";
           ></RightBarBranch>
           </td>
           </tr>
+          </tbody>
         </table>))}
       </>
     );

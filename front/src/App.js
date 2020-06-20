@@ -21,7 +21,7 @@ function App() {
         <Header></Header>
       </header>
 
-      <Row className="container">
+      <Row className="container-">
           <Col md={12}>
         <TopPanel></TopPanel>
         </Col>
@@ -34,7 +34,7 @@ function App() {
         </Col>
         <Col md={6}>
           <div className="container-">
-            <main class="content">
+            <main className="content">
           <Switch>
             <Route path='/my-offers'>
               <Page img="rem3.jpg"></Page>
