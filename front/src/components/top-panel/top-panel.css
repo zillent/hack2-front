@@ -1,4 +1,14 @@
-.top-panel {
-    height: 15vh;
-
+.top-panel{
+align-content: center;
 }
+
+.img-wrap {
+	position: relative;
+  }
+  
+  .img-wrap h1 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+  }

@@ -1,0 +1,31 @@
+.App-header- {
+    height: 15vh;
+
+}
+
+.head1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.offer-item__container {
+    border: solid 2px mediumseagreen;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
+.offer-item__header {
+    font-weight: bold;
+    height: 100px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.offer-item__footer {
+    margin: -2px !important;
+    padding: 0 !important;
+    border: solid 1px gray;
+    box-sizing: border-box;
+z-index: -1;
+}

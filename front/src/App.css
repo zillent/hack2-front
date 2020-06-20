@@ -65,11 +65,6 @@ body {
 
 /* Header
 -----------------------------------------------------------------------------*/
-.header {
-	height: 150px;
-	background: #FFE680;
-}
-
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -89,7 +84,7 @@ body {
 	overflow: hidden;
 }
 .content {
-	padding: 0 270px 0 270px;
+	padding: 0 px 0px 270px;
 }
 
 
@@ -107,11 +102,12 @@ body {
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar- {
-	float: left;
+	float: center;
 	width: 250px;
 	margin-left: -250px;
 	position: relative;
 	background: #FFACAA;
+	align-items: right;
 }
 
 

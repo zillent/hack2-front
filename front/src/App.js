@@ -1,4 +1,7 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
+//import { compose } from 'recompose';
+import { BrowserRouter } from 'react-router-dom';
 import Header from "./components/header";
 import TopPanel from "./components/top-panel";
 import RightBar from "./components/rightbar";
@@ -6,31 +9,40 @@ import LeftBar from "./components/leftbar";
 import MiddleBar from "./components/middle-bar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Page from "./components/page";
 
 import "./App.css";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header class="header">
+      <header className="header">
         <Header></Header>
       </header>
 
-      <Row class="container">
+      <Row className="container">
           <Col md={12}>
         <TopPanel></TopPanel>
         </Col>
       </Row>
-      <Row class="middle">
-        <Col md={2}>
+      <Row className="middle">
+        <Col md={3}>
           <aside className="left-sidebar">
            <LeftBar></LeftBar>
           </aside>
         </Col>
-        <Col md={7}>
-          <div className="container">
+        <Col md={6}>
+          <div className="container-">
             <main class="content">
-              <MiddleBar></MiddleBar>
+          <Switch>
+            <Route path='/my-offers'>
+              <Page img="rem3.jpg"></Page>
+            </Route>
+            <Route path='/'>
+            <MiddleBar></MiddleBar>
+            </Route>
+          </Switch>
             </main>
           </div>
         </Col>
@@ -51,6 +63,7 @@ function App() {
         gravida porttitor ligula.
       </footer>
     </div>
+    </BrowserRouter>
   );
 }
 

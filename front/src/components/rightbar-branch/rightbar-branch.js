@@ -7,16 +7,11 @@ import "./rightbar-branch.css";
 const RightBarBranch = (props) => {
   return (
     <>
-      <Row className="rightbar-branch-name">
-        <Col>{props.name}</Col>
-      </Row>
-      <Row className="rightbar-branch-content">
-        <Col>
-          {props.items.map((item) => (
-            <RightBarItem data={item}></RightBarItem>
-          ))}
-        </Col>
-      </Row>
+            <div className='rightbar-branch-name'> {props.name}</div>
+            {props.items.map((item) => (
+             <div className='rightbar-branch-content'> <RightBarItem  data={item}> </RightBarItem></div>
+            ))}
+
     </>
   );
 };

@@ -5,17 +5,13 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./top-panel.css";
+import SiteCarousel from "../sitecarousel";
 
 const TopPanel = (props) => {
   return (
-    <div className="top-panel">
-      <Row>
-        <Col>
-          Создавай и продвигай идеи, помогай решать <br />
-          важные проблемы
-        </Col>
-      </Row>
-    </div>
+
+    <SiteCarousel></SiteCarousel>
+  
   );
 };
 
