@@ -5,12 +5,13 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./top-panel.css";
+import SiteCarousel from "../sitecarousel";
 
 const TopPanel = (props) => {
   return (
-<div class="container-fluid">
-    <img src="/helpa.jpg" class="img-responsive"/>
-    </div>
+
+    <SiteCarousel></SiteCarousel>
+  
   );
 };
 

@@ -12,13 +12,13 @@ const SiteCarousel = (props) => {
                         <Carousel.Caption>
 
                         </Carousel.Caption>
-                        <img className="d-block w-100" src='/pics/glass-3097577_1920.jpg' alt="Очки" />
+                        <img className="d-block w-70" src='1.png'/>
                     </Carousel.Item>
                     <Carousel.Item>
                         <Carousel.Caption>
 
                         </Carousel.Caption>
-                        <img className="d-block w-100" src='/pics/glass-3097577_1920.jpg' alt="Очки" />
+                        <img className="d-block w-70" src='2.png'/>
                     </Carousel.Item>
                     <Carousel.Item>
                         <Carousel.Caption>

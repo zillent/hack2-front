@@ -19,7 +19,7 @@ import RightBarBranch from "../rightbar-branch/rightbar-branch";
     return (
       <>
         {IdeaList.map((branch) => (
-          <table>
+          <table className='table'>
             <tr>
             <td>
           <RightBarBranch className='table'

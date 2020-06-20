@@ -30,7 +30,7 @@ class MiddleBar extends Component {
     let offers = this.state.offers;
     if (offers && offers.length > 0) {
       return (
-        <div>
+        <div className='wind'>
           {offers.map((offer) => (
             <OfferItem data={offer}></OfferItem>
           ))}
