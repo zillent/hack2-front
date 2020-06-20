@@ -37,7 +37,22 @@ function App() {
             <main className="content">
           <Switch>
             <Route path='/my-offers'>
-              <Page img="rem3.jpg"></Page>
+              <Page img="page_3_profile_my_ideas.svg"></Page>
+            </Route>
+            <Route path='/comments'>
+              <Page img="page_4_profile_my_comments.svg"></Page>
+            </Route>
+            <Route path='/achives'>
+              <Page img="page_5_profile_reward.svg"></Page>
+            </Route>
+            <Route path='/favorites'>
+              <Page img="page_6_profile_bookmarks.svg"></Page>
+            </Route>
+            <Route path='/my-offers'>
+              <Page img="page_2_idea_open.svg"></Page>
+            </Route>
+            <Route path='/my-offers'>
+              <Page img="page_2_idea_open.svg"></Page>
             </Route>
             <Route path='/'>
             <MiddleBar></MiddleBar>
