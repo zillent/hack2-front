@@ -1,7 +1,4 @@
 import React from "react";
-//import SiteLogo from '../sitelogo';
-//import SiteCart from '../sitecart';
-//import SiteContacts from '../sitecontacts';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./header.css";
