@@ -12,14 +12,13 @@
     
 } 
 
-.headerView{
+headerView{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-
-.colortext {
-    background-color: #ffe; /* Цвет фона */
-    color: #930; /* Цвет текста */
+table {
+    color: white; /* Цвет текста */
+    
    }

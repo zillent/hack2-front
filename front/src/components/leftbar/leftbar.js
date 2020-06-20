@@ -5,20 +5,24 @@ import Branch from "../branch";
 import "./leftbar.css";
 
 const LeftBar = (props) => {
-  let branches = [{name: 'Мои предложения', link: 'fds'}, {name: 'Комментарии', link: 'fds'}, {name: 'Избранное', link: 'fds'}, {name: 'Подписки', link: 'fавыаываds'}, {name: 'Достижения', link: 'fds'}];
+  let branches = [{name: 'Мои предложения', link: 'my Offers'}, 
+                  {name: 'Обсуждения', link: 'comments'}, 
+                  {name: 'Избранное', link: 'Specials'}, 
+                  {name: 'Подписки', link: 'links'}, 
+                  {name: 'Достижения', link: 'achives'}];
     return (
-    <>
-      <Row>
-        <Col className ='headerView'>РАЗДЕЛЫ</Col>
-      </Row>
-      { branches.map(branch => <Row className='branch'>
-    <Col>
+    <table className="table">
+      <tr><td className ='headerView'>
+        РАЗДЕЛЫ
+      </td></tr>
+      { branches.map(branch => <tr>
+    <td>
       <Branch name={branch.name} link = {branch.link}/>
-    </Col>
-  </Row>
+    </td>
+  </tr>
       )
       }
-    </>);
+    </table>);
 ;
 };
 export default LeftBar;

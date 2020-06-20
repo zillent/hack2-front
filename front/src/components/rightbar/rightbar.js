@@ -34,7 +34,7 @@ const RightBar = (props) => {
   return (
     <>
       {branches.map((branch) => (
-        <RightBarBranch
+        <RightBarBranch className="headerView"
           name={branch.name}
           items={branch.items}
         ></RightBarBranch>
