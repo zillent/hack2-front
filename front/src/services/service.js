@@ -4,7 +4,7 @@ class APIService extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this._apiBase = window.location.protocol + "//" + window.location.hostname + '/api/v0/' 
+    this._apiBase = window.location.protocol + "//" + window.location.hostname ;
     this.csrftoken = this.getCookie('csrftoken');
   }
   getItems = async (url) => {

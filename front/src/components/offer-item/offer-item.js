@@ -7,7 +7,7 @@ const OfferItem = (props) => {
   return (
     <div className="offer-item__container">
       <Row className ="offer-item__header">
-        <Col>{props.data.offer_name}</Col>
+        <Col>{props.data.offer_type_name}</Col>
       </Row>
       <Row className ="offer-item__body">
         <Col>{props.data.detail}</Col>

@@ -6,13 +6,20 @@ import OfferItem from "../offer-item";
 
 class MiddleBar extends Component {
   apiService = new APIService();
-  offersURL = "offer/";
+  offersURL = "/api/v0/offer/";
+  usersURL = "/users_api/v1_0/person/";
   state = { offers: [] };
 
   componentDidMount() {
     try {
       this.apiService.getItems(this.offersURL).then((result) => {
         this.setState({ offers: result });
+        result.map((item)=>{
+        setTimeout(()=>this.apiService.getItems(this.usersURL+item.id).then((user) => {
+            console.log(user);
+        })
+        ,0);
+    })
       });
     } catch (error) {
       console.log("Error!");
@@ -26,7 +33,7 @@ class MiddleBar extends Component {
       offers = [
         {
           id: 1,
-          offer_name: "Организовать доставку воды в офис",
+          offer_type_name: "Организовать доставку воды в офис",
           detail:
             "Организовать доставку воды в офис с формированием фонда запаса воды,",
           avatar:
@@ -36,7 +43,7 @@ class MiddleBar extends Component {
         },
         {
             id: 2,
-            offer_name: "Организовать доставку воды в офис",
+            offer_type_name: "Организовать доставку воды в офис",
             detail:
               "Организовать доставку воды в офис с формированием фонда запаса воды,",
             avatar:
