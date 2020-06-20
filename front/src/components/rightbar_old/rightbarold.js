@@ -34,7 +34,7 @@ const RightBar = (props) => {
   return (
     <>
       {branches.map((branch) => (
-        <table><tr><td>
+        <table  className="table"><tr><td>
         <RightBarBranch className="table"
           name={branch.name}
           items={branch.items}
