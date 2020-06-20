@@ -18,15 +18,20 @@ class MiddleBar extends Component {
   }
 
   componentDidMount() {
-    this.apiService.getItems(this.offersURL).then((result) => {
-      console.log(result);
-      let arr = [];
-      for (let i = 0; i < result.length; i++) {
-        console.log(result[i]);
-        arr.push(result[i]);
+      try {
+        this.apiService.getItems(this.offersURL).then(result => {
+            console.log(result);
+            let arr = [];
+            for (let i = 0; i < result.length; i++) {
+              console.log(result[i]);
+              arr.push(result[i]);
+            }
+      //      this.setState({ offers: arr });
+          });
+                
+      } catch (error) {
+        console.log('Error!')          
       }
-//      this.setState({ offers: arr });
-    });
   }
   render(props) {
     console.log(this.state.offers);
