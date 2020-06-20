@@ -7,7 +7,7 @@ const RightBarItem = (props) => {
     console.log(props);
     return (<>
     <Row  >
-        <Col className="headerView"><a href={props.data.link}>{props.data.name}</a></Col>
+        <Col><a href={props.data.link}>{props.data.name}</a></Col>
     </Row>
     </>
     );

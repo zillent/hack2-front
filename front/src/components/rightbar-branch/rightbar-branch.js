@@ -9,11 +9,10 @@ const RightBarBranch = (props) => {
     <>
 
           <Row> 
-            <Col className = "headerView"> {props.name} 
+            <Col className='rightbar-branch-name'> {props.name} </Col></Row>
             {props.items.map((item) => (
-              <RightBarItem  data={item}> </RightBarItem>
-            ))}</Col>
-            </Row>
+              <Row><Col className="rightbar-branch-content"><RightBarItem  data={item}> </RightBarItem></Col></Row>
+            ))}
 
     </>
   );

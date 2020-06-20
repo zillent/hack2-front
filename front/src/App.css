@@ -102,12 +102,12 @@ body {
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar- {
-	float: left;
+	float: center;
 	width: 250px;
 	margin-left: -250px;
 	position: relative;
 	background: #FFACAA;
-	align-items: center;
+	align-items: right;
 }
 
 

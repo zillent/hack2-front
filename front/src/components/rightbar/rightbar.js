@@ -1,11 +1,11 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./rightBar.css";
+import "./rightbar.css";
 import RightBarBranch from "../rightbar-branch/rightbar-branch";
 
   const RightBar = (props) => {
-    let branches = [
+    let IdeaList = [
       {
         name: "Все идеи",
         items: [
@@ -34,11 +34,11 @@ import RightBarBranch from "../rightbar-branch/rightbar-branch";
     ];
     return (
       <>
-        {branches.map((branch) => (
+        {IdeaList.map((branch) => (
           <table>
             <tr>
             <td>
-          <RightBarBranch className="table"
+          <RightBarBranch className='table'
             name={branch.name}
             items={branch.items}
           ></RightBarBranch>
