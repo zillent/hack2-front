@@ -1,4 +1,7 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
+//import { compose } from 'recompose';
+import { BrowserRouter } from 'react-router-dom';
 import Header from "./components/header";
 import TopPanel from "./components/top-panel";
 import RightBar from "./components/rightbar";
@@ -7,10 +10,12 @@ import MiddleBar from "./components/middle-bar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+
 import "./App.css";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
       <header class="header">
         <Header></Header>
@@ -30,7 +35,14 @@ function App() {
         <Col md={7}>
           <div className="container">
             <main class="content">
-              <MiddleBar></MiddleBar>
+          <Switch>
+            <Route path='/test'>
+              Oops!
+            </Route>
+            <Route path='/'>
+            <MiddleBar></MiddleBar>
+            </Route>
+          </Switch>
             </main>
           </div>
         </Col>
@@ -51,6 +63,7 @@ function App() {
         gravida porttitor ligula.
       </footer>
     </div>
+    </BrowserRouter>
   );
 }
 
