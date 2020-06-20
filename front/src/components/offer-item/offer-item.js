@@ -12,12 +12,14 @@ const OfferItem = (props) => {
   return (
     <table>
       <tr>
-        <td>{props.name}</td>
+        <td>{props.data.offer_name}</td>
       </tr>
       <tr>
-        <td>{props.detail}</td>
+        <td>{props.data.detail}</td>
       </tr>
-      )
+      <tr>
+        <td>{props.data.avatar}</td>
+      </tr>
     </table>
   );
 };

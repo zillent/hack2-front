@@ -18,24 +18,26 @@ class MiddleBar extends Component {
   }
 
   componentDidMount() {
-      try {
-        this.apiService.getItems(this.offersURL).then(result => {
-            console.log(result);
-            let arr = [];
-            for (let i = 0; i < result.length; i++) {
-              console.log(result[i]);
-              arr.push(result[i]);
-            }
-      //      this.setState({ offers: arr });
-          });
-                
-      } catch (error) {
-        console.log('Error!')          
-      }
+    try {
+      this.apiService.getItems(this.offersURL).then((result) => {
+        this.setState({ offers: result });
+      });
+    } catch (error) {
+      console.log("Error!");
+    }
   }
   render(props) {
-    console.log(this.state.offers);
-    return <div>{this.state.offers}</div>;
+    let offers = this.state.offers;
+    if (offers && offers.length > 0) {
+      return (
+        <div>
+          {offers.map((offer) => (
+            <OfferItem data={offer}></OfferItem>
+          ))}
+        </div>
+      );
+    }
+    return <div> Нет Идей </div>;
   }
 }
 
