@@ -5,15 +5,27 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./middle-bar.css";
+//import Content from "../middle-content";
 
 const MiddleBar = (props) => {
+  /*let Contents = [
+    { name: "Предлагаю отменить третий экземпляр расходного ордера для экономии бумаги", 
+      link: "my Offers", creator: 'Иванова Л.В.', data: '22.05.2020 15:15',
+    Comment: 'Данное действие поможет сэкономить бумагу 1/3 от печатных документов в офисе',
+  counter: '24', position: 'Кассир', type: 'Предложение'}
+  ];*/
   return (
-      <Row>
-        <Col sm={12}>
-            Контент
-        </Col>
-      </Row>
-  );
+<table >
+     
+        <tr>
+          <td>
+            df
+            
+          </td>
+        </tr>
+      )
+      </table>
+  )
 };
 
 export default MiddleBar;

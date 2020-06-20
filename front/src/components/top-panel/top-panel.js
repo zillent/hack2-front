@@ -9,13 +9,7 @@ import "./top-panel.css";
 const TopPanel = (props) => {
   return (
 <div class="container-fluid">
-  <div class="row">	
-  <div class="img-wrap">		
-    <img src="/img/image.jpg" class="img-responsive">
-	<h2>Создавай и продвигай идеи,<br /> помогай решать актуальные проблемы, <br /> планируй корпоративные события</h2>
-</div>
-</div></div><>
-
+    <img src="/helpa.jpg" class="img-responsive"/>
     </div>
   );
 };

@@ -84,7 +84,7 @@ body {
 	overflow: hidden;
 }
 .content {
-	padding: 0 270px 0 270px;
+	padding: 0 px 0px 270px;
 }
 
 
@@ -107,6 +107,7 @@ body {
 	margin-left: -250px;
 	position: relative;
 	background: #FFACAA;
+	align-items: center;
 }
 
 

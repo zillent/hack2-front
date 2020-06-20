@@ -4,3 +4,28 @@ headerView{
     text-align: center;
     padding: 10px 15px;
 }
+
+.headerView{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(2, 4, 119);
+    font-size: large;
+}
+
+.rightbar-branch-name {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(2, 4, 119);
+    font-size: large;
+}
+
+.rightbar-branch-content {
+    border: 0.5px solid grey;
+    border-radius: 1%;
+    text-align: left;
+}
+.table_header{
+    border: black;
+}

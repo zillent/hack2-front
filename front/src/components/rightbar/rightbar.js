@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import RightBarBranch from "../rightbar-branch";
+import RightBarBranch from "../rightbar";
 
 const RightBar = (props) => {
   let branches = [
@@ -34,7 +34,7 @@ const RightBar = (props) => {
   return (
     <>
       {branches.map((branch) => (
-        <RightBarBranch className="headerView"
+        <RightBarBranch
           name={branch.name}
           items={branch.items}
         ></RightBarBranch>

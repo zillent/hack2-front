@@ -22,12 +22,12 @@ function App() {
         </Col>
       </Row>
       <Row class="middle">
-        <Col md={2}>
+        <Col md={3}>
           <aside className="left-sidebar">
            <LeftBar></LeftBar>
           </aside>
         </Col>
-        <Col md={7}>
+        <Col md={6}>
           <div className="container">
             <main class="content">
               <MiddleBar></MiddleBar>
