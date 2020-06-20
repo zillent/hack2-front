@@ -5,30 +5,36 @@ import './sitecarousel.css';
 
 const SiteCarousel = (props) => {
     return (
-        <section className="carousel">
-            <Container>
+        <div>
+            
                 <Carousel>
                     <Carousel.Item>
                         <Carousel.Caption>
-
                         </Carousel.Caption>
-                        <img className="d-block w-70" src='1.png'/>
+
+                        <img className="d-block w-70" src='rem6.jpg'/>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <Carousel.Caption>
-
                         </Carousel.Caption>
-                        <img className="d-block w-70" src='2.png'/>
+                        <img className="d-block w-70" src='rem6.jpg'/>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <Carousel.Caption>
-
                         </Carousel.Caption>
-                        <img className="d-block w-100" src='/pics/glass-3097577_1920.jpg' alt="Очки" />
+                        <img className="d-block w-70" src='rem6.jpg'/>
                     </Carousel.Item>
-                </Carousel>
-            </Container>
-        </section>
+
+                    <Carousel.Item>
+                        <Carousel.Caption>
+                        </Carousel.Caption>
+                        <img className="d-block w-70" src='rem6.jpg'/>
+                    </Carousel.Item>
+                    </Carousel>
+            
+        </div>
     );
 }
 

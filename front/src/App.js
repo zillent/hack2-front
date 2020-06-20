@@ -33,7 +33,7 @@ function App() {
           </aside>
         </Col>
         <Col md={6}>
-          <div className="container">
+          <div className="container-">
             <main class="content">
           <Switch>
             <Route path='/test'>
