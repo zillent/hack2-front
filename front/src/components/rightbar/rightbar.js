@@ -7,15 +7,6 @@ import RightBarBranch from "../rightbar-branch/rightbar-branch";
   const RightBar = (props) => {
     let IdeaList = [
       {
-        name: "ВСЕ ИДЕИ",
-        items: [
-          { name: "Мои идеи", link: 'fsefs' },
-          { name: "Мои комментарии", link: 'fsefs' },
-          { name: "Избранное", link: 'fsefs' },
-          { name: "Настройка", link: 'fsefs' }
-        ],
-      },
-      {
         name: "ПОПУЛЯРНЫЕ ТЕГИ",
         items: [
           { name: "#Реклама", link: 'fsefs'},
@@ -23,14 +14,7 @@ import RightBarBranch from "../rightbar-branch/rightbar-branch";
           { name: "#Мусор",  link: 'fsefs'},
           { name: "#Автоматизация процесса",  link: 'fsefs'}
         ],
-      },
-      {
-        name: "ПОСЛЕДНИЕ НОВОСТИ",
-        items: [
-          { name: "Оптимизация расходов на рекламу", link: 'fsefs' },
-          { name: "Оптимизация рекламы", link: 'fsefs' }
-        ],
-      },
+      }
     ];
     return (
       <>
