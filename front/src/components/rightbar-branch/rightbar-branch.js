@@ -7,17 +7,14 @@ import "./rightbar-branch.css";
 const RightBarBranch = (props) => {
   return (
     <>
-      <table><tr>
-        <td className='rightbar-branch-name'>{props.name}</td>
-      </tr>
-      <td>
-        <tr>
-          {props.items.map((item) => (
-            <RightBarItem data={item}></RightBarItem>
-          ))}
-        </tr>
-      </td>
-      </table>
+
+          <Row> 
+            <Col className = "headerView"> {props.name} 
+            {props.items.map((item) => (
+              <RightBarItem  data={item}> </RightBarItem>
+            ))}</Col>
+            </Row>
+
     </>
   );
 };

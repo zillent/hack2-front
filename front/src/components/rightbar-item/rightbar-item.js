@@ -4,9 +4,10 @@ import Col from "react-bootstrap/Col";
 import "./rightbar_item.css";
 
 const RightBarItem = (props) => {
+    console.log(props);
     return (<>
-    <Row>
-        <Col className='rightbar-item-name'>{props.data.name}</Col>
+    <Row  className="rightbar-item-name">
+        <Col><a href={props.data.link}>{props.data.name}</a></Col>
     </Row>
     </>
     );

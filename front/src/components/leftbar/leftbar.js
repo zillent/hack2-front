@@ -10,7 +10,7 @@ const LeftBar = (props) => {
     { name: "Обсуждения", link: "comments" },
     { name: "Избранное", link: "Specials" },
     { name: "Подписки", link: "links" },
-    { name: "Достижения", link: "achives" },
+    { name: "Достижения", link: "achives" }
   ];
   return (
     <table className="table">
