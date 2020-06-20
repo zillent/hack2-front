@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-//import SiteLogo from '../sitelogo';
-//import SiteCart from '../sitecart';
-//import SiteContacts from '../sitecontacts';
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./middle-bar.css";
 import APIService from "../../services/service";
 //import Content from "../middle-content";
@@ -13,9 +8,6 @@ class MiddleBar extends Component {
   apiService = new APIService();
   offersURL = "offer/";
   state = { offers: [] };
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     try {
@@ -28,7 +20,7 @@ class MiddleBar extends Component {
   }
   render(props) {
     let offers = this.state.offers;
-    if (offers.length == 0 && window.location.hostname === "localhost") {
+    if (offers.length === 0 && window.location.hostname === "localhost") {
         console.log('Using Fake data!')
       // FAKE DATA for testing!
       offers = [
@@ -57,9 +49,9 @@ class MiddleBar extends Component {
 
     if (offers && offers.length > 0) {
       return (
-        <div className='wind'>
+        <div className='wind-'>
           {offers.map((offer) => (
-            <OfferItem data={offer}></OfferItem>
+            <OfferItem data={offer} key={offer.id}></OfferItem>
           ))}
         </div>
       );
