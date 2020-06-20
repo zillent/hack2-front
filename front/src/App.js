@@ -17,16 +17,16 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <header class="header">
+      <header className="header">
         <Header></Header>
       </header>
 
-      <Row class="container">
+      <Row className="container">
           <Col md={12}>
         <TopPanel></TopPanel>
         </Col>
       </Row>
-      <Row class="middle">
+      <Row className="middle">
         <Col md={3}>
           <aside className="left-sidebar">
            <LeftBar></LeftBar>

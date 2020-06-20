@@ -19,13 +19,13 @@ const Header = (props) => {
           <div className="input-group">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Поиск идей и предложений"
             >
             </input>
-            <div class="input-group-append">
-              <button class="btn btn-secondary" type="button">
-                <i class="fa fa-search"></i>
+            <div className="input-group-append">
+              <button className="btn btn-secondary" type="button">
+                <i className="fa fa-search"></i>
               </button>
             </div>
           </div>
