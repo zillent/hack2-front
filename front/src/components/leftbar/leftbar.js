@@ -6,9 +6,9 @@ import "./leftbar.css";
 
 const LeftBar = (props) => {
   let branches = [
-    { name: "Мои предложения", link: "my Offers" },
+    { name: "Мои предложения", link: "my-offers" },
     { name: "Обсуждения", link: "comments" },
-    { name: "Избранное", link: "Specials" },
+    { name: "Избранное", link: "favorites" },
     { name: "Подписки", link: "links" },
     { name: "Достижения", link: "achives" }
   ];

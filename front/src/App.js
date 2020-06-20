@@ -9,7 +9,7 @@ import LeftBar from "./components/leftbar";
 import MiddleBar from "./components/middle-bar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import Page from "./components/page";
 
 import "./App.css";
 
@@ -36,8 +36,8 @@ function App() {
           <div className="container-">
             <main class="content">
           <Switch>
-            <Route path='/test'>
-              Oops!
+            <Route path='/my-offers'>
+              <Page img="rem3.jpg"></Page>
             </Route>
             <Route path='/'>
             <MiddleBar></MiddleBar>
