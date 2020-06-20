@@ -10,17 +10,20 @@ import "./offer-item.css";
 
 const OfferItem = (props) => {
   return (
-    <table>
-      <tr>
-        <td>{props.data.offer_name}</td>
-      </tr>
-      <tr>
-        <td>{props.data.detail}</td>
-      </tr>
-      <tr>
-        <td>{props.data.avatar}</td>
-      </tr>
-    </table>
+    <div className="offer-item__container">
+      <Row className ="offer-item__header">
+        <Col>{props.data.offer_name}</Col>
+      </Row>
+      <Row className ="offer-item__body">
+        <Col>{props.data.detail}</Col>
+      </Row>
+
+      <Row className ="offer-item__footer">
+        <Col>
+          <img src={props.data.avatar}></img>
+        </Col>
+      </Row>
+    </div>
   );
 };
 
