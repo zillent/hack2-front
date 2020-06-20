@@ -1,3 +1,16 @@
+.branch {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    min-width: 150px;
+        padding: 5px 15px;
+        margin: 0 5px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(61, 61, 61, 0.822);
+    
+} 
+
 .headerView{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,19 +19,8 @@
     font-size: large;
 }
 
-.rightbar-branch-name {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: rgb(2, 4, 119);
-    font-size: large;
-}
-
-.rightbar-branch-content {
-    border: 0.5px solid grey;
-    border-radius: 1%;
-    text-align: left;
-}
-.table_header{
-    border: black;
-}
+.table {
+    color: white; /* Цвет текста */
+    padding-left: 200px;
+    padding-top:  30px;
+   }

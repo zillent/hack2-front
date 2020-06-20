@@ -6,8 +6,8 @@ import "./rightbar_item.css";
 const RightBarItem = (props) => {
     console.log(props);
     return (<>
-    <Row  className="rightbar-item-name">
-        <Col><a href={props.data.link}>{props.data.name}</a></Col>
+    <Row  >
+        <Col className="headerView"><a href={props.data.link}>{props.data.name}</a></Col>
     </Row>
     </>
     );
