@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import APIService from "../../services/service";
+import Dialog from "../dialog";
 
 class NewOffer extends Component {
   apiService = new APIService();
@@ -16,6 +17,7 @@ class NewOffer extends Component {
       details: "",
     },
     sendoffer: false,
+    categorize: false,
   };
   handleInputChange = (e) => {
     this.setState({
@@ -25,14 +27,20 @@ class NewOffer extends Component {
       },
     });
   };
-  handleSendClick = (e) => {
+  handleReadyToCategorizeClick = (e) => {
+    this.setState({ categorize: true });
+  };
+
+  handleSendClick = (answer_history) => {
+
     this.setState({
       sendOffer: true,
+      categorize: false,
     });
     console.log("send Offer!");
     let json = JSON.stringify({
       offer_type_name: this.state.values.subject,
-      detail: this.state.values.details,
+      detail: this.state.values.details+' {'+answer_history+'}',
     });
     console.log(json);
     this.apiService.postItems(this.offersURL, json).then(
@@ -45,8 +53,10 @@ class NewOffer extends Component {
   };
 
   render() {
+    let showCategorizeDialog = this.state.categorize ? <Dialog close_dlg={this.handleSendClick}/> : "";
     return (
       <div className="new-offer__div">
+        {showCategorizeDialog}
         <Form>
           <Form.Group as={Row} controlId="formHeader">
             <Form.Label column sm={12}>
@@ -83,7 +93,7 @@ class NewOffer extends Component {
               />
             </Col>
           </Form.Group>
-          <Button onClick={this.handleSendClick}>Отправить</Button>
+          <Button onClick={this.handleReadyToCategorizeClick}>Отправить</Button>
         </Form>
       </div>
     );

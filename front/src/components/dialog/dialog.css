@@ -1,0 +1,40 @@
+@keyframes show-dialog {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.top-dialog {
+    display:block;
+    position: fixed;
+    /* Фиксированное положение */
+    left: 10%;
+    right: 10%;
+    /* Расстояние от правого края окна браузера */
+    top: 8%;
+    bottom: 8%;
+    /* Расстояние сверху */
+    padding: 20px;
+    /* Поля вокруг текста */
+    background: #fff;
+    /* Цвет фона */
+    border: 1px solid #333;
+    /* Параметры рамки */
+    width: 100%;
+    z-index: 100;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show-dialog 2s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    //animation-delay: 1s; /* Задержка перед началом */  
+    overflow: auto;
+}
+
+.top-dialog__body {
+    height: 50%;
+    padding-top: 30px;
+}
