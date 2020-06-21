@@ -10,7 +10,8 @@ import MiddleBar from "./components/middle-bar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Page from "./components/page";
-
+import DoOffer from "./components/do-offer";
+import NewOffer from "./components/new-offer";
 import "./App.css";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <main className="content">
           <Switch>
             <Route path='/my-offers'>
+                <DoOffer></DoOffer>
               <Page img="page_3_profile_my_ideas.svg"></Page>
             </Route>
             <Route path='/comments'>
@@ -48,8 +50,8 @@ function App() {
             <Route path='/favorites'>
               <Page img="page_6_profile_bookmarks.svg"></Page>
             </Route>
-            <Route path='/my-offers'>
-              <Page img="page_2_idea_open.svg"></Page>
+            <Route path='/new-offer'>
+              <NewOffer></NewOffer>
             </Route>
             <Route path='/my-offers'>
               <Page img="page_2_idea_open.svg"></Page>
