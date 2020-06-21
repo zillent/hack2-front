@@ -19,12 +19,12 @@ class Dialog extends Component {
       this.state.question_history + ">" + this.state.question + ":";
     let answers = this.state.answers;
     answers.map((answer) => {
-      if (answer.id === id) {
+      if (answer.id == id) {
         question_history += answer.answer;
       }
       return question_history;
     });
-    if (id === 1) {
+    if (id == 1) {
       this.setState({
         questionAnswer: "",
         question_history: question_history,
@@ -37,7 +37,7 @@ class Dialog extends Component {
       });
       return;
     }
-    if (id === 3 || id === 7 || id === 10 || id === 13 || id === 16) {
+    if (id == 3 || id == 7 || id == 10 || id == 13 || id == 16) {
       this.setState({
         questionAnswer: "0",
         question_history: question_history,
@@ -45,7 +45,7 @@ class Dialog extends Component {
         answers: [],
       });
     }
-    if (id === 5) {
+    if (id == 5) {
       this.setState({
         questionAnswer: "",
         question_history: question_history,
@@ -57,7 +57,7 @@ class Dialog extends Component {
         ],
       });
     }
-    if (id === 6) {
+    if (id == 6) {
       this.setState({
         questionAnswer: "",
         question_history: question_history,
@@ -69,7 +69,7 @@ class Dialog extends Component {
         ],
       });
     }
-    if (id === 11) {
+    if (id == 11) {
       this.setState({
         questionAnswer: "0",
         question_history: question_history,
@@ -78,7 +78,7 @@ class Dialog extends Component {
       });
     }
 
-    if (id === 12 || id === 9) {
+    if (id == 12 || id == 9) {
       this.setState({
         questionAnswer: "0",
         question_history: question_history,
@@ -87,7 +87,7 @@ class Dialog extends Component {
       });
     }
 
-    if (id === 8) {
+    if (id == 8) {
       this.setState({
         questionAnswer: "0",
         question_history: question_history,
@@ -102,7 +102,7 @@ class Dialog extends Component {
   };
 
   render() {
-    if (this.state.answers.length === 0) {
+    if (this.state.answers.length == 0) {
       this.props.close_dlg(
         this.state.question_history + ", Категория: " + this.state.question
       );
